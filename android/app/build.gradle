@@ -142,7 +142,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.una.android"
+        applicationId "com.z12performance.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1500

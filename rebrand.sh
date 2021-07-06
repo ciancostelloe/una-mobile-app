@@ -1,12 +1,12 @@
 #!/bin/bash
 
 SED="gsed"
-DOMAIN="kookaburra.com"
-URL="https://${DOMAIN}/"
-TITLE="Kookaburra"
-NAME="kookaburra"
-PACKAGE="com.kookaburra.app"
-PACKAGE2="kookaburra"
+DOMAIN="z12performance.com"
+URL="https://z12performance.com/"
+TITLE="z12performance"
+NAME="z12performance"
+PACKAGE="com.z12performance.app"
+PACKAGE2="z12performance"
 PACKAGE3="app"
 
 

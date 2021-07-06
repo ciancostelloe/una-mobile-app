@@ -44,11 +44,11 @@ import { version } from './package.json';
 
 type Props = {};
 
-const BASE_URL = 'https://una.io/'; // site URL
+const BASE_URL = 'https://z12performance.com/'; // site URL
 const MIX_LIGHT = '12'; // template styles mix for light mode
 const MIX_DARK = '13'; // template styles mix for dark mode
 const TEMPLATE = 'protean'; // template name
-const TITLE = 'UNA.IO'; // app title
+const TITLE = 'z12performance'; // app title
 const ONESIGNALAPPID = ''; // you can obtain one from https://onesignal.com/
 const PAYMENTS_CALLBACK = ''; // empty string means payment functionality is disabled
 
