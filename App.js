@@ -701,7 +701,7 @@ function UnaFooter(o) {
 function UnaToolbar(o) {
     return (
         <Header androidStatusBarColor={useTheme('colors.statusBar')} transparent={false} iosBarStyle={useTheme('iosBarStyle')} style={styles.header}>
-            <Left>
+{/*             <Left>
             {o.loading ? (
                 <ActivityIndicator size="small" color={useTheme('colors.activityIndicator')} style={styles.loadingIndicator} />
             ):(
@@ -717,11 +717,11 @@ function UnaToolbar(o) {
                     </Button>
                 )
             )}
-            </Left>
+            </Left> */}
 {/*
             <Body style={Platform.OS === 'android' && {flexDirection: 'row', justifyContent: 'flex-start'}}>
 */}
-            <Body>
+{/*             <Body>
                 <Title style={styles.headerTitle} onPress={o.onHomeMenu}>{TITLE}</Title>
             </Body>
             <Right>
@@ -730,12 +730,12 @@ function UnaToolbar(o) {
                         <Icon name='search' onPress={o.onSearchMenu} style={styles.headerIcon} />
                     </Button>
                 )}
-            </Right>
+            </Right> */}
         </Header>
     );
 }
 
-function UnaToolbarSearch(o) {
+/* function UnaToolbarSearch(o) {
     return (
         <Header androidStatusBarColor={useTheme('colors.statusBar')} transparent={false} iosBarStyle={useTheme('iosBarStyle')} style={styles.header} searchBar rounded>
           <Item>
@@ -747,7 +747,7 @@ function UnaToolbarSearch(o) {
           </Button>
         </Header>
     );
-}
+} */
 
 function UnaDrawer(o) {
     return (
@@ -780,7 +780,7 @@ const styles = new StyleSheet.create({
     },
     header: {
         backgroundColor: useTheme('colors.primary'),
-        height: 46, paddingTop:0, // tmp fix - https://github.com/GeekyAnts/NativeBase/issues/3095
+        height: 8, paddingTop:0, // tmp fix - https://github.com/GeekyAnts/NativeBase/issues/3095
     },
     headerTitle: {
         color: useTheme('colors.textOnPrimary'),

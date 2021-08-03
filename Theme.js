@@ -19,8 +19,8 @@ const themeLight = {
     dark: false,
     iosBarStyle: 'light-content',
     colors: {
-        primary: '#1890ff',
-        textOnPrimary: '#f3f4f5',
+        primary: '#333737',
+        textOnPrimary: '#F1A943',
         background: '#edf1f7',
         text: '#595959',
         drawerBackground: '#edf1f7',
