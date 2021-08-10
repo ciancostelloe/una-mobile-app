@@ -50,7 +50,7 @@ const MIX_DARK = '13'; // template styles mix for dark mode
 const TEMPLATE = 'protean'; // template name
 const TITLE = 'z12performance'; // app title
 const ONESIGNALAPPID = ''; // you can obtain one from https://onesignal.com/
-const PAYMENTS_CALLBACK = ''; // empty string means payment functionality is disabled
+const PAYMENTS_CALLBACK = 'test'; // empty string means payment functionality is disabled
 
 export default class App extends Component<Props> {
 
