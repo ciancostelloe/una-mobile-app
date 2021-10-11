@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/ciancostelloe/Z12/Code/Apps/Z12_Forked/una-mobile-app/ios/z12performance.xcodeproj">
+      location = "group:z12performance.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

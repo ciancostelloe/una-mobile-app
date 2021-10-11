@@ -1,5 +1,27 @@
 PODS:
   - boost-for-react-native (1.63.0)
+  - Braintree (4.38.0):
+    - Braintree/Card (= 4.38.0)
+    - Braintree/Core (= 4.38.0)
+    - Braintree/PayPal (= 4.38.0)
+    - Braintree/UI (= 4.38.0)
+  - Braintree/Card (4.38.0):
+    - Braintree/Core
+  - Braintree/Core (4.38.0)
+  - Braintree/PayPal (4.38.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.38.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.38.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.38.0)
+  - Braintree/UI (4.38.0):
+    - Braintree/Card
+    - Braintree/Core
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.64.1)
@@ -59,7 +81,7 @@ PODS:
   - glog (0.3.5)
   - JitsiMeetSDK (2.4.0)
   - libevent (2.1.12)
-  - OneSignal (3.4.3)
+  - OneSignalXCFramework (3.8.1)
   - OpenSSL-Universal (1.1.180)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
@@ -257,9 +279,13 @@ PODS:
   - react-native-jitsi-meet (2.1.1):
     - JitsiMeetSDK (= 2.4.0)
     - React
-  - react-native-onesignal (4.0.8):
-    - OneSignal (= 3.4.3)
+  - react-native-onesignal (4.3.1):
+    - OneSignalXCFramework (= 3.8.1)
     - React (< 1.0.0, >= 0.13.0)
+  - react-native-payments (0.8.4):
+    - Braintree (~> 4)
+    - React
+    - Stripe (~> 19)
   - react-native-splash-screen (3.2.0):
     - React
   - react-native-webview (11.4.4):
@@ -330,6 +356,7 @@ PODS:
     - React-perflogger (= 0.64.1)
   - RNIap (6.0.5):
     - React-Core
+  - Stripe (19.4.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -358,6 +385,7 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitUserDefaultsPlugin (~> 0.75.1)
   - FlipperKit/SKIOSNetworkPlugin (~> 0.75.1)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - OneSignalXCFramework (< 4.0, >= 3.0)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -373,6 +401,7 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-jitsi-meet (from `../node_modules/react-native-jitsi-meet`)
   - react-native-onesignal (from `../node_modules/react-native-onesignal`)
+  - react-native-payments (from `../node_modules/react-native-payments`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - react-native-webview (from `../node_modules/react-native-webview`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -393,6 +422,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - Braintree
     - CocoaAsyncSocket
     - Flipper
     - Flipper-DoubleConversion
@@ -403,8 +433,9 @@ SPEC REPOS:
     - FlipperKit
     - JitsiMeetSDK
     - libevent
-    - OneSignal
+    - OneSignalXCFramework
     - OpenSSL-Universal
+    - Stripe
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -442,6 +473,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-jitsi-meet"
   react-native-onesignal:
     :path: "../node_modules/react-native-onesignal"
+  react-native-payments:
+    :path: "../node_modules/react-native-payments"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
   react-native-webview:
@@ -477,6 +510,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  Braintree: 78a33deb6f6ec617c2c4891fbe352854358b3a8d
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: 7b423f9e248eae65987838148c36eec1dbfe0b53
@@ -491,7 +525,7 @@ SPEC CHECKSUMS:
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   JitsiMeetSDK: d4a3aeed1a75fd57e6a78e5d202b6051dfcb9320
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  OneSignal: e4dfb1912410f302dc9661ce98fc829f6c18ff6a
+  OneSignalXCFramework: cd6290d43d4f7dd0443d34e7be8b95996417644e
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: ec2ebc96b7bfba3ca5c32740f5a0c6a014a274d2
@@ -505,7 +539,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 124e8f99992490d0d13e0649d950d3e1aae06fe9
   React-jsinspector: 500a59626037be5b3b3d89c5151bc3baa9abf1a9
   react-native-jitsi-meet: 29ed76cdc6142d9a6c013bb14dd6205df0b5452b
-  react-native-onesignal: 50b047c674b79ba700218338fdefb45220da4db5
+  react-native-onesignal: d8d59d8df1e47231aec95e6392fea53eb0bcbac1
+  react-native-payments: 0cb00209f3b25a72d5b614554abf688e2cc53002
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   react-native-webview: cc2a1fd8149a2654d1408793daa62baadfc0bd96
   React-perflogger: aad6d4b4a267936b3667260d1f649b6f6069a675
@@ -521,9 +556,10 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: ff951a0c241bfaefc4940a3f1f1a229e7cb32fa6
   ReactCommon: bedc99ed4dae329c4fcf128d0c31b9115e5365ca
   RNIap: d2fa19ddee59384457c956e0569c927135bcba7d
+  Stripe: 5914399ac5878056b985d56b409cb4bb1e7fc7e8
   Yoga: a7de31c64fe738607e7a3803e3f591a4b1df7393
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f93be5fd371492fdad85810818c315f862ee70fd
+PODFILE CHECKSUM: 35ded2068e774464ea0d195f737b64779cdb87e4
 
 COCOAPODS: 1.10.1
