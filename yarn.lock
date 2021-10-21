@@ -4396,7 +4396,7 @@
     "import-local" "^3.0.2"
     "jest-cli" "^26.6.3"
 
-"jetifier@^1.6.2":
+"jetifier@^1.6.2", "jetifier@^1.6.8":
   "integrity" "sha512-3Zi16h6L5tXDRQJTb221cnRoVG9/9OvreLdLU2/ZjRv/GILL+2Cemt0IKvkowwkDpvouAU1DQPOJ7qaiHeIdrw=="
   "resolved" "https://registry.npmjs.org/jetifier/-/jetifier-1.6.8.tgz"
   "version" "1.6.8"
