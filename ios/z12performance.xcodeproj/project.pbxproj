@@ -672,6 +672,7 @@
 			baseConfigurationReference = ED22A787FBD3B50FE0AF597D /* Pods-z12performance-z12performanceTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 772ZTZAXU4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -700,6 +701,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 772ZTZAXU4;
 				INFOPLIST_FILE = unaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -726,7 +728,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = una/una.entitlements;
-				CURRENT_PROJECT_VERSION = 1501;
+				CURRENT_PROJECT_VERSION = 2000;
 				DEVELOPMENT_TEAM = 772ZTZAXU4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = una/Info.plist;
@@ -734,7 +736,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.0;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -757,7 +759,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = una/una.entitlements;
-				CURRENT_PROJECT_VERSION = 1501;
+				CURRENT_PROJECT_VERSION = 2000;
 				DEVELOPMENT_TEAM = 772ZTZAXU4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = una/Info.plist;
@@ -765,7 +767,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.0;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -927,7 +929,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Z12.ios.OneSignalNotificationServiceExtension--explicit--com.Z12.ios.OneSignalNotificationServiceExtension--explicit--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Z12.ios.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -962,7 +964,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Z12.ios.OneSignalNotificationServiceExtension--explicit--com.Z12.ios.OneSignalNotificationServiceExtension--explicit--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Z12.ios.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;

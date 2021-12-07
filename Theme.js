@@ -5,13 +5,13 @@ const themeDark = {
     dark: true,
     iosBarStyle: 'light-content',
     colors: {
-        primary: '#1890ff',
-        textOnPrimary: '#f3f4f5',
-        background: '#123',
-        text: '#f3f4f5',
-        drawerBackground: '#f3f4f5',
+        primary: '#333737',
+        textOnPrimary: '#F1A943',
+        background: '#edf1f7',
+        text: '#595959',
+        drawerBackground: '#edf1f7',
         drawerText: '#1890ff',
-        statusBar: '#076fd3',
+        statusBar: '#333737',
         activityIndicator: '#f3f4f5',
     }
 };
@@ -25,7 +25,7 @@ const themeLight = {
         text: '#595959',
         drawerBackground: '#edf1f7',
         drawerText: '#1890ff',
-        statusBar: '#076fd3',
+        statusBar: '#333737',
         activityIndicator: '#f3f4f5',
     }
 };
